@@ -1,0 +1,29 @@
+GET http://localhost:8000/
+
+###
+
+GET  http://localhost:8000/todos/
+
+###
+GET  http://localhost:8000/todos/5dcff277-b58e-41cf-b577-bc150e71e03d
+
+
+###
+
+POST http://localhost:8000/todos/
+content-type: application/json
+
+{
+  "title" : "petting 🦕"
+}
+
+###
+PUT http://localhost:8000/todos/<id>
+Content-Type: application/json
+{
+    "done" :true
+}
+
+###
+DELETE http://localhost:8000/todos/3921b65b-36e3-4785-9d48-ca844245ef7d
+
